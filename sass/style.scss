@@ -5,6 +5,18 @@
 @import "base/base";
 
 body {
+  font-family: "Oxygen", Arial, Helvetica, sans-serif;
   background: linear-gradient(to right, #329880, #000e30);
   color: #fff;
+}
+
+.home-title {
+  display: flex;
+  padding-top: 20%;
+  .left,
+  .right {
+    justify-content: space-between;
+    align-content: center;
+    width: 50%;
+  }
 }
