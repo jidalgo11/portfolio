@@ -6,17 +6,69 @@
 
 body {
   font-family: "Oxygen", Arial, Helvetica, sans-serif;
-  background: linear-gradient(to right, #329880, #000e30);
-  color: #fff;
+  color: $white;
+  background: $white;
 }
 
-.home-title {
+header {
   display: flex;
-  padding-top: 20%;
-  .left,
-  .right {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 25px 0;
+  z-index: 1;
+  .container {
+    display: flex;
     justify-content: space-between;
-    align-content: center;
-    width: 50%;
+    align-items: center;
+    .logo {
+      font-size: 2.5rem;
+      text-decoration: none;
+      font-weight: 700;
+    }
+    nav ul {
+      display: flex;
+      gap: 15px;
+    }
   }
+}
+
+.hero {
+  background: $black url("../images/hero.jpg") no-repeat center;
+  background-size: cover;
+  padding: 250px 0;
+  position: relative;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba($black, 0.875);
+  }
+  .container {
+    color: $white;
+  }
+}
+
+.about-me {
+  margin: 75px 0;
+  text-align: center;
+  .info {
+    ul {
+      display: flex;
+      color: rebeccapurple;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.35rem;
+      font-weight: 700;
+    }
+  }
+}
+
+.projects {
+  padding: 100px 0;
+  background-color: rebeccapurple;
 }
