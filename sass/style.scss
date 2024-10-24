@@ -13,13 +13,17 @@ body {
 .cta {
 	padding: 10px;
 	border: 2px $primary solid;
-	// background-color: $primary;
 	font-weight: 700;
 	width: 175px;
 	min-width: 175px;
 	display: inline-block;
 	text-align: center;
 	color: $primary;
+	transition: all 0.25s linear;
+	&:hover {
+		background-color: $primary;
+		color: $white;
+	}
 }
 
 header {
@@ -42,6 +46,7 @@ header {
 		nav ul {
 			display: flex;
 			gap: 15px;
+			display: none;
 		}
 	}
 }
@@ -57,18 +62,20 @@ header {
 		height: 100%;
 		top: 0;
 		left: 0;
-		background: rgba($black, 0.7);
+		background: rgba($black, 0.8);
 	}
 	.hero-content {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 20px;
 		align-content: flex-start;
 		p {
 			margin: 0;
 			color: $white;
 		}
 		.hero-ctas {
+			display: flex;
+			gap: 15px;
 		}
 	}
 }
@@ -91,5 +98,15 @@ header {
 
 .projects {
 	padding: 100px 0;
-	background-color: rebeccapurple;
+	background-color: $primary;
+}
+
+footer {
+	background-color: $primary;
+	padding: 25px 0;
+	text-align: center;
+	p {
+		color: $white;
+		margin: 0;
+	}
 }
