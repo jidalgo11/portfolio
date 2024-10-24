@@ -1,52 +1,51 @@
 // Base styles for html elements and containers
 
 body {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  color: $black;
-  line-height: normal;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+	color: $black;
+	line-height: normal;
 }
 
 h1 {
-  font-size: 4rem;
-  color: $white;
+	font-size: 4rem;
+	color: $white;
 }
 
 h2 {
-  font-size: 2.25rem;
-  margin-bottom: 15px;
-  color: rebeccapurple;
+	font-size: 2.25rem;
+	color: rebeccapurple;
 }
 
 h3 {
-  font-size: 1.125em;
-  margin: 10px 0;
-  font-weight: 500;
+	font-size: 1.125em;
+	margin: 10px 0;
+	font-weight: 500;
 }
 
 p {
-  margin: 15px 0;
-  font-size: 1.75rem;
-  color: dimgray;
+	margin: 15px 0;
+	font-size: 1.75rem;
+	color: dimgray;
 }
 
 a {
-  color: $white;
-  text-decoration: none;
+	color: $white;
+	text-decoration: none;
 }
 
 footer a {
-  color: $black;
+	color: $black;
 }
 
 .container {
-  width: 95%;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  height: inherit;
+	width: 95%;
+	max-width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	height: inherit;
 }
 
 ul {
-  list-style-type: none;
+	list-style-type: none;
 }
