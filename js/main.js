@@ -25,11 +25,11 @@ for (let i = 0; i < carouselImg.length; i++) {
 }
 
 myName.addEventListener("mouseover", function () {
-  console.log("Kelsey");
+  console.log("Bruce");
 });
 
 myName.addEventListener("mouseout", function () {
-  console.log("Marie");
+  console.log("Wayne");
 });
 
 var obj;
