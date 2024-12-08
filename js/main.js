@@ -2,10 +2,8 @@ const header = document.querySelector("#header");
 const copyright = document.querySelector("#copyright");
 const links = document.querySelectorAll('a[href^="#"]');
 
-const headerHeight = header.offsetHeight;
-
 window.addEventListener("scroll", (e) => {
-	if (window.scrollY > headerHeight) {
+	if (window.scrollY > 25) {
 		header.classList.add("active");
 	} else {
 		header.classList.remove("active");
@@ -19,6 +17,7 @@ links.forEach((link) => {
 		const targetEl = document.getElementById(targetId);
 
 		if (targetEl) {
+			const headerHeight = header.offsetHeight;
 			const sectionPosition =
 				targetEl.getBoundingClientRect().top + window.scrollY;
 			const offsetPosition = sectionPosition - headerHeight;
