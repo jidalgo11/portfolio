@@ -11,14 +11,14 @@
 </head>
 
 <body>
-  <header>
+  <header id="header" class="">
     <div class="container">
-      <a href="" class="logo">DH</a>
+      <div class="logo">Daniel<span>Hidalgo</span></div>
       <nav>
         <ul>
           <li><a href="#aboutme">About Me</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#myprojects">My Projects</a></li>
+          <li><a href="#mywork">My Work</a></li>
+          <li><a href="#learning">Continuous Learning</a></li>
           <li><a href="#contact">Contact Me</a></li>
         </ul>
       </nav>
@@ -30,10 +30,10 @@
         <div class="hero-content-info">
           <div class="hero-content-info-me">
             <h1>Hello, I'm <span>Daniel Hidalgo</span></h1>
-            <h3>Frontend developer creating digital experiences for the world wide web.</h3>
+            <p>Frontend developer creating digital experiences for the world wide web.</p>
           </div>
           <div class="hero-content-info-ctas">
-            <a href="#projects" class="cta">View My Work</a>
+            <a href="#mywork" class="cta">View My Work</a>
             <a class="cta" href="files/resume.pdf" target="_blank">Resume</a>
           </div>
         </div>
@@ -49,7 +49,7 @@
       </div>
     </div>
   </section>
-  <section class="about-me">
+  <section class="about-me" id="aboutme">
     <div class="container">
       <div class="about-me-content">
         <div class="about-me-content-bio">
@@ -66,13 +66,13 @@
             <li>&#x2022;</li>
             <li>Marana, AZ</li>
             <li>&#x2022;</li>
-            <li>jidalgo11@gmail.com</li>
+            <li>daniel@daniel-hidalgo.com</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
-  <section class="projects" id="projects">
+  <section class="projects" id="mywork">
     <div class="container">
       <div class="projects-content">
         <div class="project-content-info">
@@ -99,31 +99,58 @@
       </div>
     </div>
   </section>
-  <section class="continuous-learning">
+  <section class="continuous-learning" id="learning">
     <div class="container">
-      <h2>Continuous Learning</h2>
-      <p>I believe continuous learning is essential for staying adaptable and innovative in the ever-evolving field of
-        web development. While I specialize in front-end development, I am constantly growing my skill set. Recently,
-        I've been expanding into backend and full-stack development, using resources like roadmap.sh to guide my
-        learning journey. Feel free to check out my progress below!</p>
-      <a href="https://roadmap.sh" target="_blank" class="card-tall"><img
-          src="https://roadmap.sh/card/tall/6728607831d65c235d7d38ac?variant=light&roadmaps=frontend%2Cbackend%2Cjavascript%2Cnodejs"
-          alt="roadmap.sh" /></a>
+      <div class="continuous-learning-content">
+        <div class="continuous-learning-content-info">
+          <h2>Continuous Learning</h2>
+          <p>I believe continuous learning is essential for staying adaptable and innovative in the ever-evolving field
+            of
+            web development. While I specialize in front-end development, I am constantly growing my skill set.
+            Recently,
+            I've been expanding into backend and full-stack development, using resources like roadmap.sh to guide my
+            learning journey. Feel free to check out my progress!</p>
+        </div>
+        <div class="continuous-learning-content-progress">
+          <div class="continuous-learning-content-progress-cards"><a href="https://roadmap.sh" target="_blank"
+              class="card-tall"><img
+                src="https://roadmap.sh/card/tall/6728607831d65c235d7d38ac?variant=light&roadmaps=frontend%2Cbackend%2Cjavascript%2Cnodejs"
+                alt="roadmap.sh" /></a>
 
-      <a href="https://roadmap.sh" target="_blank" class="card-wide"><img
-          src="https://roadmap.sh/card/wide/6728607831d65c235d7d38ac?variant=light&roadmaps=frontend%2Cbackend%2Cjavascript%2Cnodejs"
-          alt="roadmap.sh" /></a>
+            <a href="https://roadmap.sh" target="_blank" class="card-wide"><img
+                src="https://roadmap.sh/card/wide/6728607831d65c235d7d38ac?variant=light&roadmaps=frontend%2Cbackend%2Cjavascript%2Cnodejs"
+                alt="roadmap.sh" /></a>
+          </div>
+          <div class="continuous-learning-content-progress-projects card">
+            <div class="card-info">
+              <h3>Roadmap.sh Projects</h3>
+              <p>Roadmap.sh provides hands-on opportunities to sharpen my web development skills. Take a look at the
+                projects I'm currently building!</p>
+              <div class="card-links">
+                <div class="card-links-content">
+                  <a href="https://github.com/jidalgo11/roadmap.sh-projects/tree/master/frontend-projects/"
+                    target="_blank" class=""><i class="fa-brands fa-square-github"></i> Frontend Projects Repo</a>
+                </div>
+                <div class="card-links-content">
+                  <a href="https://github.com/jidalgo11/roadmap.sh-projects/tree/master/backend-projects/"
+                    target="_blank"><i class="fa-brands fa-square-github"></i> Backend Projects Repo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section class="contact">
+  <section class="contact" id="contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <a class="cta" href="mailto:jidalgo11@gmail.com">Get In Touch</a>
+      <a class="cta" href="mailto:daniel@daniel-hidalgo.com">Get In Touch</a>
     </div>
   </section>
   <footer>
     <div class="container">
-      <p>&copy; 2024 Daniel Hidalgo</p>
+      <p id="copyright"></p>
     </div>
   </footer>
   <script src="js/main.js"></script>
