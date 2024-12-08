@@ -208,6 +208,9 @@ footer {
 }
 
 @media screen and (max-width: 1025px) {
+	nav {
+		display: none;
+	}
 	.hero {
 		padding: 150px 0;
 		.hero-content {
