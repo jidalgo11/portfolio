@@ -255,12 +255,11 @@ footer {
 
 @media screen and (max-width: 1025px) {
 	header {
-		.container {
-			.logo {
-				font-size: 2.1em;
-				span {
-					font-size: 1.1rem;
-				}
+		padding: 20px 0;
+		.container .logo {
+			font-size: 2.1em;
+			span {
+				font-size: 1.1rem;
 			}
 		}
 	}
@@ -310,14 +309,17 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
-	header .container .logo {
-		font-size: 2em;
-		span {
-			font-size: 1rem;
+	header {
+		padding: 15px 0;
+		.container .logo {
+			font-size: 2em;
+			span {
+				font-size: 1rem;
+			}
 		}
 	}
 	.hero {
-		padding: 125px 0;
+		padding: 155px 0 100px 0;
 		.hero-content {
 			gap: 25px;
 			&-info {
