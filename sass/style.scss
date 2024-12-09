@@ -310,6 +310,12 @@ footer {
 }
 
 @media screen and (max-width: 770px) {
+	header .container .logo {
+		font-size: 2em;
+		span {
+			font-size: 1rem;
+		}
+	}
 	.hero {
 		padding: 125px 0;
 		.hero-content {
