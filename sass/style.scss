@@ -199,7 +199,7 @@ header {
 			justify-content: space-between;
 			&-cards,
 			&-projects {
-				flex: 0 0 48%;
+				flex: 0 1 48%;
 			}
 			&-cards {
 				.card-tall {
@@ -216,7 +216,7 @@ header {
 				display: flex;
 				flex-direction: column;
 				gap: 15px;
-				padding: 15px 20px;
+				padding: 15px 25px;
 				border-radius: 5px;
 				background-color: $cards;
 				&-links {
@@ -224,7 +224,7 @@ header {
 					flex-direction: column;
 					gap: 10px;
 					a {
-						font-size: 1.25em;
+						font-size: 1.15em;
 						color: $white;
 						transition: 0.25s color ease-in-out;
 						&:hover {
@@ -242,6 +242,27 @@ header {
 }
 
 .contact {
+	.contact-content {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		&-links {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			a {
+				font-size: 1.175em;
+				transition: 0.25s color ease-in-out;
+				&:hover {
+					color: $secondary;
+				}
+				svg {
+					color: $secondary;
+					margin-right: 5px;
+				}
+			}
+		}
+	}
 }
 
 footer {
@@ -371,6 +392,9 @@ footer {
 			&-cards a img {
 				width: 80%;
 				margin: 0 auto;
+			}
+			&-projects-links a {
+				font-size: 1em;
 			}
 		}
 	}
