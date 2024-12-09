@@ -35,10 +35,11 @@ header {
 			color: $primary;
 			text-transform: uppercase;
 			letter-spacing: 5px;
+			line-height: 2rem;
 			span {
 				display: block;
 				font-size: 1.15rem;
-				letter-spacing: 5px;
+				letter-spacing: 3px;
 			}
 		}
 		nav ul {
