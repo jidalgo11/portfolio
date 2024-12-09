@@ -3,7 +3,7 @@ const copyright = document.querySelector("#copyright");
 const links = document.querySelectorAll('a[href^="#"]');
 
 window.addEventListener("scroll", (e) => {
-	if (window.scrollY > 25) {
+	if (window.scrollY > 5) {
 		header.classList.add("active");
 	} else {
 		header.classList.remove("active");
