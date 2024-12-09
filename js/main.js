@@ -1,4 +1,4 @@
-const header = document.querySelector("#header");
+const header = document.querySelector("header");
 const copyright = document.querySelector("#copyright");
 const links = document.querySelectorAll('a[href^="#"]');
 
