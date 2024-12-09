@@ -133,20 +133,38 @@ header {
 }
 
 .about-me {
-	padding: 75px 0;
-	&-content {
+	.about-me-content {
 		display: flex;
-		flex-direction: column;
-		gap: 30px;
+		gap: 35px;
+		justify-content: space-between;
+		align-items: flex-start;
+		&-bio {
+			width: 60%;
+		}
 		&-info {
 			ul {
 				display: flex;
-				color: $secondary;
-				justify-content: center;
-				align-items: center;
-				gap: 10px;
-				font-size: 1.75rem;
+				color: $primary-text;
+				flex-direction: column;
+				gap: 15px;
+				font-size: 1.45rem;
 				font-weight: 700;
+				padding: 0;
+				margin: 0;
+				li {
+					svg {
+						color: $secondary;
+						padding-right: 15px;
+						font-size: 1.125em;
+					}
+					a {
+						color: $primary-text;
+						text-decoration: underline;
+						svg {
+							color: $secondary;
+						}
+					}
+				}
 			}
 		}
 	}
@@ -209,7 +227,6 @@ header {
 }
 
 .contact {
-	padding: 75px 0;
 }
 
 footer {
@@ -263,6 +280,14 @@ footer {
 			}
 		}
 	}
+	.about-me .about-me-content {
+		&-bio {
+			width: 50%;
+		}
+		&-info ul {
+			font-size: 1.25em;
+		}
+	}
 }
 
 @media screen and (max-width: 770px) {
@@ -285,6 +310,15 @@ footer {
 					}
 				}
 			}
+		}
+	}
+	.about-me .about-me-content {
+		flex-direction: column;
+		&-bio {
+			width: 100%;
+		}
+		&-info ul {
+			font-size: 1.175em;
 		}
 	}
 	.continuous-learning {
