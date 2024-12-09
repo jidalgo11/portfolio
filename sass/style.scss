@@ -135,33 +135,40 @@ header {
 .about-me {
 	.about-me-content {
 		display: flex;
+		flex-direction: column;
 		gap: 35px;
 		justify-content: space-between;
-		align-items: flex-start;
-		&-bio {
-			width: 60%;
-		}
+		// align-items: flex-start;
 		&-info {
-			ul {
-				display: flex;
-				color: $primary-text;
-				flex-direction: column;
-				gap: 15px;
-				font-size: 1.45rem;
-				font-weight: 700;
-				padding: 0;
-				margin: 0;
-				li {
-					svg {
-						color: $secondary;
-						padding-right: 15px;
-						font-size: 1.125em;
-					}
-					a {
-						color: $primary-text;
-						text-decoration: underline;
+			display: flex;
+			gap: 35px;
+			justify-content: space-between;
+			align-items: flex-start;
+			&-bio {
+				width: 60%;
+			}
+			&-details {
+				ul {
+					display: flex;
+					color: $primary-text;
+					flex-direction: column;
+					gap: 15px;
+					font-size: 1.45rem;
+					font-weight: 700;
+					padding: 0;
+					margin: 0;
+					li {
 						svg {
 							color: $secondary;
+							padding-right: 15px;
+							font-size: 1.125em;
+						}
+						a {
+							color: $primary-text;
+							text-decoration: underline;
+							svg {
+								color: $secondary;
+							}
 						}
 					}
 				}
@@ -171,15 +178,14 @@ header {
 }
 
 .projects {
-	padding: 75px 0;
 	.projects-content {
+		display: flex;
+		flex-direction: column;
+		gap: 35px;
 		&-cards {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
 			gap: 1rem;
-			.card {
-				// flex: 0 1 calc(33.33% - 1rem);
-			}
 		}
 	}
 }
@@ -280,12 +286,17 @@ footer {
 			}
 		}
 	}
-	.about-me .about-me-content {
+	.about-me .about-me-content .about-me-content-info {
 		&-bio {
 			width: 50%;
 		}
-		&-info ul {
+		&-details ul {
 			font-size: 1.25em;
+		}
+	}
+	.projects .projects-content {
+		&-cards {
+			grid-template-columns: repeat(2, 1fr);
 		}
 	}
 }
@@ -312,13 +323,18 @@ footer {
 			}
 		}
 	}
-	.about-me .about-me-content {
+	.about-me .about-me-content .about-me-content-info {
 		flex-direction: column;
 		&-bio {
 			width: 100%;
 		}
 		&-info ul {
 			font-size: 1.175em;
+		}
+	}
+	.projects .projects-content {
+		&-cards {
+			grid-template-columns: repeat(1, 1fr);
 		}
 	}
 	.continuous-learning {
