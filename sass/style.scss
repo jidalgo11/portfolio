@@ -142,7 +142,6 @@ header {
 			display: flex;
 			gap: 35px;
 			justify-content: space-between;
-			align-items: flex-start;
 			&-bio {
 				width: 60%;
 			}
@@ -184,13 +183,13 @@ header {
 		&-cards {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
-			gap: 1rem;
+			gap: 1.75em;
 		}
 	}
 }
 
 .continuous-learning {
-	.continuous-learning-content {
+	.learning-content {
 		display: flex;
 		flex-direction: column;
 		gap: 35px;
@@ -213,17 +212,27 @@ header {
 				}
 			}
 			&-projects {
-				padding: 25px;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				padding: 15px 20px;
 				border-radius: 5px;
 				background-color: $cards;
-				a {
-					margin-bottom: 10px;
-					display: inline-block;
-					font-size: 1.25em;
-					color: $white;
-					svg {
-						color: $complementary2;
-						margin-right: 5px;
+				&-links {
+					display: flex;
+					flex-direction: column;
+					gap: 10px;
+					a {
+						font-size: 1.25em;
+						color: $white;
+						transition: 0.25s color ease-in-out;
+						&:hover {
+							color: $secondary;
+						}
+						svg {
+							color: $secondary;
+							margin-right: 5px;
+						}
 					}
 				}
 			}
@@ -336,12 +345,23 @@ footer {
 			grid-template-columns: repeat(1, 1fr);
 		}
 	}
-	.continuous-learning {
+	.continuous-learning .learning-content {
 		.card-tall {
 			display: block;
 		}
 		.card-wide {
 			display: none;
+		}
+		&-progress {
+			flex-direction: column;
+			gap: 25px;
+			&-cards,
+			&-projects {
+				flex: 1 1 auto;
+			}
+			&-cards a img {
+				width: 100%;
+			}
 		}
 	}
 }

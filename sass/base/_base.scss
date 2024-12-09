@@ -33,7 +33,6 @@ h2 {
 h3 {
 	color: $accent;
 	font-size: 1.75rem;
-	margin-bottom: 10px;
 	font-weight: 700;
 }
 
@@ -56,7 +55,7 @@ a {
 	display: inline-block;
 	text-align: center;
 	color: $white;
-	transition: all 0.25s linear;
+	transition: all 0.25s ease-in-out;
 	&:hover {
 		background-color: $accent;
 		color: $white;
