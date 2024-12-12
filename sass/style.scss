@@ -260,6 +260,8 @@ header {
 			a {
 				font-size: 1.175em;
 				transition: 0.25s color ease-in-out;
+				align-self: flex-start;
+				flex-grow: 0;
 				&:hover {
 					color: $secondary;
 				}
